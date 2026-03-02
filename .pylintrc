@@ -1,0 +1,59 @@
+[MASTER]
+# Specify a configuration file.
+ignore=.venv,build,dist
+# Python version
+py-version=3.11
+
+[MESSAGES CONTROL]
+# Enable the message categories
+enable=all
+# Disable overly strict or irrelevant messages for beginners
+disable=C0103,  # Variable name style
+        R0903,  # Too few public methods
+        R0201,  # Method could be a function
+        W0511   # TODO/FIXME comments
+
+[REPORTS]
+# Set output format
+output-format=colorized
+# Do not show the full report summary
+reports=no
+
+[FORMAT]
+# Maximum line length
+max-line-length=88
+# String quote checking
+string-quote=single
+# Indentation settings
+indent-string='    '
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=10
+# Maximum number of attributes for a class
+max-attributes=15
+# Maximum number of locals
+max-locals=20
+
+[TYPECHECK]
+# Check for undefined variables and imports
+ignored-modules=
+ignored-classes=
+
+[IMPORTS]
+# Check for unused imports
+check-untyped-defs=yes
+
+[DOCSTRING]
+# Encourage docstrings
+docstring-min-length=10
+require-docstring=yes
+docstring-style=google
+
+[SIMILARITIES]
+# Ignore duplicate code detection for beginners
+min-similarity-lines=10
+
+[STRING]
+# Allow any string formatting style
+check-str-concat-over-line-jumps=no

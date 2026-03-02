@@ -1,0 +1,21 @@
+=========================
+Part D: AI-Augmented Task Evaluation
+=========================
+
+Prompt used to generate .pylintrc:
+I am a beginner Python developer working on an AI/ML onboarding project. 
+Please generate a .pylintrc configuration file that is beginner-friendly, enforces basic PEP8, checks for docstrings, and avoids overly strict rules.
+
+What AI got right:
+- Enabled basic PEP8 checks (line length, indentation)
+- Beginner-friendly (disabled strict docstring rules)
+- Checks for common errors like unused imports
+
+What I would change:
+- Add minor checks for import order
+- Enable warnings for unused variables to improve code quality
+- Could include function naming conventions gradually as a learning step
+
+Conclusion:
+The AI-generated configuration is suitable for beginners, allowing us to focus on learning Python without being penalized too much. 
+It helps maintain readability and basic quality, while advanced rules can be introduced later as we become more comfortable with Python and AI/ML coding standards.
