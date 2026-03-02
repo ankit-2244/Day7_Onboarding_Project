@@ -1,0 +1,6 @@
+Python version: PASS
+Virtual environment: PASS
+pylint: PASS
+black: PASS
+numpy: PASS
+Internet: PASS
