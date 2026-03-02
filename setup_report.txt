@@ -1,6 +1,11 @@
-Python version: PASS
-Virtual environment: PASS
-pylint: PASS
-black: PASS
-numpy: PASS
-Internet: PASS
+=== Developer Onboarding Check ===
+[PASS] 3.12
+[PASS]
+[PASS] numpy installed: version 2.4.2
+[PASS] pylint installed: version 4.0.5
+[PASS] black installed: version 26.1.0
+[PASS] requests installed: version 2.32.5
+[PASS]
+[PASS] Disk space OK: 295.54 GB free
+-- Result: 8/8 checks passed ✓
+Total execution time: 1.72 seconds
