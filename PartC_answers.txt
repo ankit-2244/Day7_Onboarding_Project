@@ -1,0 +1,53 @@
+=========================
+Part C: Interview Ready
+=========================
+
+Q1: Conceptual — Explain virtual environments
+-------------------------------------------------
+A Python virtual environment is like a private workspace for your projects. 
+It allows each project to have its own set of Python packages without interfering with other projects. 
+Developers use them so that updating a library for one project doesn’t break another. 
+Without virtual environments, all projects share the same global Python packages, which can cause conflicts — 
+like multiple chefs sharing the same kitchen and ingredients, which can spoil each dish.
+
+-------------------------------------------------
+
+Q2: Fix and improve the code
+-----------------------------
+# Corrected Python code
+
+"""
+Check Python version script
+"""
+import sys
+
+def check_version():
+    """Check if Python version is >= 3.10"""
+    if sys.version_info >= (3, 10):
+        return "Good"
+    return "Bad"
+
+def main():
+    result = check_version()
+    print("Version status:", result)
+
+if __name__ == "__main__":
+    main()
+
+-------------------------------------------------
+
+Q3: Debug/Analyze — numpy ModuleNotFoundError
+-----------------------------------------------
+Possible causes and diagnostics:
+
+1. Cause: Numpy installed in a different Python environment.
+   Diagnostic: python -m pip show numpy
+   Explanation: The numpy package might be installed in system Python, not the virtual environment.
+
+2. Cause: Using the wrong Python interpreter.
+   Diagnostic: which python (Linux/Mac) or where python (Windows)
+   Explanation: VS Code or terminal may point to a different Python than expected.
+
+3. Cause: Package not actually installed in current environment.
+   Diagnostic: pip list | findstr numpy
+   Explanation: Confirms if numpy exists in the current environment
